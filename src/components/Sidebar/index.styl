@@ -1,0 +1,267 @@
+a:link,
+a:hover,
+a:active,
+a:visited{
+	text-decoration: none;
+}
+/*侧边栏*/
+.psidebar{
+    width:200px;
+    height:100%;
+    background:#3d4851;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:99;
+    overflow: auto;
+}
+.psidebarinner{
+    padding-top:70px;
+}
+.sidebar_list{
+    background:#3d4851;
+}
+.sidebar_list ul{
+	margin-bottom: 0;
+	padding:0;
+}
+.sidebar_list ul li a{
+    display: block;
+    padding-left:12px;
+    color:#728798;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar_list ul li.active a{
+    background:#58646d url('../../assets/images/sidebarline.jpg') repeat-y left center;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar_list ul li a span{
+    display: block;
+    font-size:14px;
+    height:36px;
+    line-height:36px;
+    padding-left: 40px;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar_list ul li.active a span{
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.sidebar_list ul li.organizations a span{
+    background:url(../../assets/images/sidebar_icon_default_01.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.signature a span{
+    background:url(../../assets/images/sidebar_icon_default_02.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.template a span{
+    background:url(../../assets/images/sidebar_icon_default_03.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.passageway a span{
+    background:url(../../assets/images/sidebar_icon_default_04.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.messages a span{
+    background:url(../../assets/images/sidebar_icon_default_05.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.blacklist a span{
+    background:url(../../assets/images/sidebar_icon_default_06.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.rolelist a span{
+    background:url(../../assets/images/sidebar_icon_default_07.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.userlist a span{
+    background:url(../../assets/images/sidebar_icon_default_08.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.menulist a span{
+    background:url(../../assets/images/sidebar_icon_default_09.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgurl a span{
+    background:url(../../assets/images/sidebar_icon_default_10.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.passagewayurl a span{
+    background:url(../../assets/images/sidebar_icon_default_11.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.sendsms a span{
+    background:url(../../assets/images/sidebar_icon_default_12.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.recharge a span{
+    background:url(../../assets/images/sidebar_icon_default_13.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.messagesfinal a span{
+    background:url(../../assets/images/sidebar_icon_default_14.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.welcome a span{
+    background:url(../../assets/images/sidebar_icon_default_15.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.reply a span{
+    background:url(../../assets/images/sidebar_icon_default_16.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.analysis a span{
+    background:url(../../assets/images/sidebar_icon_default_17.png) no-repeat left center;
+    background-size: auto 24px;
+}
+
+.sidebar_list ul li.sendanalysis a span{
+    background:url(../../assets/images/sidebar_icon_default_18.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.sendimpasse a span{
+    background:url(../../assets/images/sidebar_icon_default_19.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.keyword a span{
+    background:url(../../assets/images/sidebar_icon_default_20.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.presend a span{
+    background:url(../../assets/images/sidebar_icon_default_21.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgorder a span{
+    background:url(../../assets/images/sidebar_icon_default_22.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgorderapprove a span{
+    background:url(../../assets/images/sidebar_icon_default_23.png) no-repeat left center;
+    background-size: auto 24px;
+}
+
+.sidebar_list ul li.organizations.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_01.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.signature.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_02.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.template.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_03.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.passageway.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_04.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.messages.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_05.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.blacklist.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_06.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.rolelist.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_07.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.userlist.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_08.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.menulist.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_09.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgurl.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_10.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.passagewayurl.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_11.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.sendsms.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_12.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.recharge.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_13.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.messagesfinal.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_14.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.welcome.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_15.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.reply.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_16.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.analysis.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_17.png) no-repeat left center;
+    background-size: auto 24px;
+}
+
+.sidebar_list ul li.sendanalysis.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_18.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.sendimpasse.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_19.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.keyword.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_20.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.presend.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_21.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgorder.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_22.png) no-repeat left center;
+    background-size: auto 24px;
+}
+.sidebar_list ul li.orgorderapprove.active a span{
+    color:#fff;
+    background:url(../../assets/images/sidebar_icon_active_23.png) no-repeat left center;
+    background-size: auto 24px;
+}
