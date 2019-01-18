@@ -8,6 +8,7 @@ export default class AppRouter extends Component{
 	render(){
 		return  <Router>
 					<App>
+						<Route exact path="/" component={Login}></Route>
 						<Route path="/login" component={Login}></Route>
 						<Route path="/home" render={({match})=>{
 							let token = true;
@@ -17,7 +18,7 @@ export default class AppRouter extends Component{
 									<Home>
 										<Switch>
 											<Route exact path={pathBase} component={IndexTest}/>
-											
+											<Route path={pathBase+"/organizations"} component={IndexTest}/>
 										</Switch>
 									</Home>
 								</Router>)
