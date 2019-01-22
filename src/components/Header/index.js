@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import shouldComponentUpdate from '../../common/shouldComponentUpdate';
 import logOut from '../../common/logOut';
 import { 
 	Input, 
@@ -8,6 +9,12 @@ import {
 } from 'antd';
 const { confirm } = Modal;
 class Header extends Component{
+	constructor(props){
+		super(props);
+		//每个组件必须引入此方法
+		this.shouldComponentUpdate = shouldComponentUpdate;
+	}
+	
 	state = {
 		username : "管理员",
 		modalShow:false,

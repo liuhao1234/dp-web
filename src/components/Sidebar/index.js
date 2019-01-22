@@ -1,8 +1,14 @@
 import React,{Component,Fragment} from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import shouldComponentUpdate from '../../common/shouldComponentUpdate';
 import Axios from '../../axios';
 import './index.styl';
 class Sidebar extends Component{
+	constructor(props){
+		super(props);
+		//每个组件必须引入此方法
+		this.shouldComponentUpdate = shouldComponentUpdate;
+	}
 	state = {
 		sidebarList : [],
 		navIndex:0,

@@ -1,4 +1,6 @@
+import store from "../../redux/store";
+import { clearToken } from "../../redux/action/tokenActions";
 export default function logOut(){
-    sessionStorage.removeItem("beautifulGirl");
+    store.dispatch(clearToken());
     window.location.reload();
 }

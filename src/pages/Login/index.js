@@ -1,4 +1,5 @@
 import React, { Component,Fragment } from 'react';
+import shouldComponentUpdate from '../../common/shouldComponentUpdate';
 import { 
 	Button,
 	Input,
@@ -9,6 +10,12 @@ import LoginBg from '../../assets/images/login_bg.jpg';
 import Syslogo from '../../assets/images/sys_logo.png';
 import Loginpc from '../../assets/images/login_pc.png';
 class Login extends Component {
+	constructor(props){
+		super(props);
+		//每个组件必须引入此方法
+		this.shouldComponentUpdate = shouldComponentUpdate;
+	}
+	
 	handleSubmit = ()=>{
     	this.props.history.push('/home');
   	}

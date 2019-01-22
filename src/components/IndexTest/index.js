@@ -10,6 +10,7 @@ import {
 export default class IndexTest extends Component{
 	constructor(props){
 		super(props);
+		//每个组件必须引入此方法
 		this.shouldComponentUpdate = shouldComponentUpdate;
 	}
 	render(){

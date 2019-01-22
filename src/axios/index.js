@@ -2,6 +2,8 @@ import axios from 'axios';
 import { Modal, message } from 'antd';
 import logOut from '../common/logOut';
 import serverUrl from './serverUrl';
+import store from '../redux/store';
+import { changeToken } from '../redux/action/tokenActions';
 
 message.config({
   duration: 2,
@@ -12,8 +14,8 @@ export default class Axios {
 	static ajax(options){
 		const baseURL = serverUrl;
 		//const baseURL = "http://localhost:9696/";
-		const token = sessionStorage.getItem("beautifulGirl");
-		
+		const token = store.getState().token;
+		console.log(token)
 		return new Promise((resolve,reject)=>{
 			axios({
 				method:'post',
@@ -30,7 +32,7 @@ export default class Axios {
 					let res = response.data;
 					if(res.code === 200){//code是501的时候请求超时
 						resolve(response.data);
-						sessionStorage.setItem("beautifulGirl",res.token);
+						store.dispatch(changeToken(res.token));
 					}else if(res.code === 501){
 						Modal.info({
 						    title: '退出登录',
